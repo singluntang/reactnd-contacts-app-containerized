@@ -22,6 +22,9 @@ This app is a 2 teir achitecture, a server and a client.
         *   `npm install'
     3.  Now you can run the MyReads App by typing in:
         *   'npm start' 
+    4. Change your image name
+        *   From the todo-deployment/docker/docker-compose-build.yaml file change the `programmingwsite` to your desire name.
+        *  From the todo-deployment/docker/docker-compose.yaml file change the `programmingwsite` to your desire name. The name should be the same as docker-compose-build.yaml.
     4. To containerized the app, goto todo-deployment folder inside the docker folder type in
        the following command:
         * Build the images: `docker-compose -f docker-compose-build.yaml build --parallel`
