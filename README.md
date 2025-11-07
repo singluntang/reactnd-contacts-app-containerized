@@ -24,9 +24,9 @@ This app is a 2 teir achitecture, a server and a client.
         *   'npm start' 
     4. To containerized the app, goto todo-deployment folder inside the docker folder type in
        the following command:
-        a. Build the images: `docker-compose -f docker-compose-build.yaml build --parallel`
-        b. Push the images: `docker-compose -f docker-compose-build.yaml push`
-        c. Run the container: `docker-compose up`
+        * Build the images: `docker-compose -f docker-compose-build.yaml build --parallel`
+        * Push the images: `docker-compose -f docker-compose-build.yaml push`
+        * Run the container: `docker-compose up`
 
 ## References
 
