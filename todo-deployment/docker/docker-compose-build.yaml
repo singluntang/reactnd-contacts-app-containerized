@@ -1,0 +1,13 @@
+services:
+  contacts_reverseproxy:
+    build:
+      context: .
+    image: programmingwsite/contacts_reverseproxy 
+  backend_contacts:
+    build:
+      context: ../../reactnd-contacts-server2
+    image: programmingsite/restapi_contacts
+  frontend_contacts:
+    build:
+      context: ../../reactnd-contacts-app 
+    image: programmingsite/contacts_frontend:local

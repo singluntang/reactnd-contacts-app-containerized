@@ -1,0 +1,22 @@
+services:
+  contacts_reverseproxy:
+    image: programmingwsite/contacts_reverseproxy
+    restart: always
+    depends_on:
+      - backend_contacts   
+  backend_contacts:
+    image: programmingsite/restapi_contacts
+    volumes:
+      - $HOME/.aws:/root/.aws  
+    ports:
+      - "3001:3001" 
+    environment:
+      REACT_APP_CONTACTS_API_URL: "3001"                     
+  frontend_contacts:
+    image: programmingsite/contacts_frontend:local 
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: "3000"
+      REACT_APP_CONTACTS_API_URL: "http://localhost:3001"
+    stdin_open: true

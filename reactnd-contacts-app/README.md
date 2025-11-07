@@ -17,7 +17,7 @@ This app is a 2 teir achitecture, a server and a client.
 * The only options to install the contact web site is by cloning from the git hub please follow the instructions below (I assume you have install the git program and node package manager).
 
     1. From the GitBash/Window Terminal, type in the command:
-        *   `git clone https://github.com/singluntang/reactnd-contacts.git'
+        *   `git clone https://github.com/singluntang/reactnd-contacts-containerized.git'
     2. After clone, you need to install the packages and dependencies. Type in the following command.
         *   `npm install'
     3.  Now you can run the MyReads App by typing in:

@@ -30,7 +30,7 @@ class CreateContact extends Component {
                         maxHeight={64} />
                     <div className='create-contact-details'>
                         <input type='text' name='name' placeholder='Name' />
-                        <input type='text' name='handle' placeholder='Handle' />
+                        <input type='text' name='handle' placeholder='Job Role' />
                         <button>Add Contact</button>
                     </div>                  
                 </form>

@@ -1,10 +1,10 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const config = require('./config')
 const contacts = require('./contacts')
 
 const app = express()
+const port = process.env.REACT_APP_CONTACTS_API_URL
 
 app.use(express.static('public'))
 app.use(cors())
@@ -62,6 +62,6 @@ app.post('/contacts', bodyParser.json(), (req, res) => {
   }
 })
 
-app.listen(config.port, () => {
-  console.log('Server listening on port %s, Ctrl+C to stop', config.port)
+app.listen(port, () => {
+  console.log('Server listening on port %s, Ctrl+C to stop', port)
 })

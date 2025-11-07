@@ -17,11 +17,16 @@ This app is a 2 teir achitecture, a server and a client.
 * The only options to install the contact web site is by cloning from the git hub please follow the instructions below (I assume you have install the git program and node package manager).
 
     1. From the GitBash/Window Terminal, type in the command:
-        *   `git clone https://github.com/singluntang/reactnd-contacts-app.git'
+        *   `git clone https://github.com/singluntang/reactnd-contacts-containerized.git'
     2. After clone, you need to install the packages and dependencies. Type in the following command.
         *   `npm install'
     3.  Now you can run the MyReads App by typing in:
         *   'npm start' 
+    4. To containerized the app, goto todo-deployment folder inside the docker folder type in
+       the following command:
+        a. Build the images: `docker-compose -f docker-compose-build.yaml build --parallel`
+        b. Push the images: `docker-compose -f docker-compose-build.yaml push`
+        c. Run the container: `docker-compose up`
 
 ## References
 

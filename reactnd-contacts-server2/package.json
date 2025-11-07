@@ -7,7 +7,7 @@
     "express": "^4.16.4"
   },
 "scripts": {
-"start": "cross-env PORT=3001 node server.js"
+"start": "node server.js"
 },
   "license": "MIT",
   "repository": {
